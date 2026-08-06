@@ -1,0 +1,42 @@
+what is Github.
+it is  a basically a tool which helps us manage code and different contributors can also contribute to the code.
+
+what is SSH vs HTTPs ?
+//
+
+SSH keygen it will create a folder under your homne directory
+
+in linux by default you go there or else you can go to your user directory
+or cd ~
+
+similar window will also have it's own
+
+
+public vs private key
+public is shared with the server
+
+
+Q) How is computer grafics different from image processing
+grahics is generation of images using geometry and
+image processing is acquisation and algorithm
+
+Q) what are the geometry premitive of graphics
+lines, point, curves and areas.
+
+Q) describe the graphical framework in java
+AWT, spring, javafx
+
+Q) what is the design pattern for creating user interface(eg clicking button)
+events listner
+
+Q) static graphic and interactive graphic
+static graphic is done without cursor movement
+while interactive is done with cursor movement.
+repanting
+
+Q) How is curves connected to calculus. 
+
+Q) Describe https and ssh protocols for git repos
+Q) and metion the keys
+
+Q) public vs private keys
