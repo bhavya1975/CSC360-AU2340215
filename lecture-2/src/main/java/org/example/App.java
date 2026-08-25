@@ -13,6 +13,7 @@ public class App extends JPanel {
         Graphics2D g2d = (Graphics2D)g;
         g2d.setColor(Color.RED);
         g2d.drawRect(200, 100, 150, 150);
+
     }
 
     public static void main(String[] args) {
@@ -23,5 +24,6 @@ public class App extends JPanel {
         frame.setDefaultCloseOperation(3);
         frame.setLocationRelativeTo((Component)null);
         frame.setVisible(true);
+
     }
 }
