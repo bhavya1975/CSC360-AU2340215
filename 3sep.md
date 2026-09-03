@@ -19,7 +19,9 @@ we have a limited amount of characters currently being displayed in the window
 so putting them continuously with one indentation would make it not clearly visible 
 
 For example,
-aa  aa  aa      aa ...                        aaa...                                          ...    aa 
+aa  aa  aa      aa ...                        aaa...                                          ...    aa
+
+
 after that we won't be able to put a new character because visually it won't be able to explain itself
 
 
