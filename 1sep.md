@@ -1,18 +1,7 @@
-# Systems, Linear Structures, and Hierarchies: Architectural Lecture Notes
+# Reflection
 **Date:** September 01, 2026  
-**Subject:** Advanced Computer Science & Mathematical Modeling
+**Subject:** Mathematical Modeling, queue, stack, graphs and trees
 
----
-
-## Executive Overview
-
-This technical reference document examines three foundational paradigms across computational mathematics and system architecture:
-
-1. **Geometric Boundary Modeling:** Formalizing two-dimensional enclosed regions through systems of linear equations and half-space constraints.
-2. **State Management Abstract Data Types:** Analyzing structural mechanics, temporal ordering, and application constraints in LIFO versus FIFO memory models.
-3. **Hierarchical Topology & Tree Structures:** Exploring non-linear node graphs, balanced search properties, and traversal mechanics.
-
----
 
 ## 1. Mathematical Formalization of 2D Convex Regions
 
@@ -59,26 +48,6 @@ Linear abstract data types enforce constrained access patterns to maintain tempo
          |   Elem A   |                    (Tail)            (Head)
          +------------+
 ```
-
----
-
-#### Flaw of Queue-Based State Recovery (FIFO):
-If state transformations are queued sequentially, issuing a revert operation dequeues the *oldest* element ($e_1$):
-
-$$\text{Dequeue}() \implies \text{Revert } e_1 \text{ ("Hello")}$$
-
-*Outcome:* The baseline payload is destroyed while downstream modifications ($e_2, e_3$) remain applied onto invalid context.
-
-#### Correctness of Stack-Based State Tracking (LIFO):
-A stack preserves chronological dependency by unwinding state in exact inverse order of application:
-
-$$\text{Stack State}: [e_1] \xrightarrow{\text{push}} [e_1, e_2] \xrightarrow{\text{push}} [e_1, e_2, e_3 \, (\text{Top})]$$
-
-Triggering an undo command invokes `pop()`:
-
-$$\text{Pop}() \implies \text{Revert } e_3 \text{ ("Bold")}$$
-
-*Outcome:* The system steps backward along its causal timeline without corrupting foundational state.
 
 ---
 
